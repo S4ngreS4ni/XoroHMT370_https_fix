@@ -3,7 +3,7 @@
 # mplayer_wrapper.sh
 # ---------------------------------------------------------------------------
 # Transparent mplayer wrapper for the ListenLive firmware (SkyTC KMP510 /
-# Ingenic JZ4760(B) platform - Xoro HMT350/HMT370, Envivo, Arnova, Wiwa,
+# Ingenic JZ4760(B) platform - Xoro HMT370, Envivo, Arnova, Wiwa,
 # Roxcore, Xenta, Disgo, Pearl, Otek, Aigo, Full-Join, Foxman, VDuck, and
 # other rebrands of the same platform).
 #
