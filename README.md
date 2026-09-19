@@ -108,16 +108,24 @@ different from mine.
 
 This SoC is a bit fussy about curl binaries - some generic "mipsel"
 builds crash with an "Illegal instruction" error, because this older
-core doesn't support the newer instruction set (MIPS32r2) many
-toolchains target by default.
+core only supports an old MIPS instruction set (mips2), not the newer
+MIPS32r2 that many toolchains target by default.
 
-**The build that worked for me (static, plain mipsel, NOT the musl
-variant):**
+(One thing that turned out NOT to matter: musl vs glibc. I originally
+thought the "plain" mipsel build, as opposed to the one with `-musl` in
+its filename, was the key - but checking the actual binary that works
+on my unit later on, it turns out it was built with a musl
+cross-compiler internally anyway, despite not having "-musl" in the
+filename. So don't sweat that part - the real thing to watch for is the
+instruction set, not the libc.)
+
+**The build that worked for me:**
 
 [stunnel/static-curl](https://github.com/stunnel/static-curl/releases) -
-download `curl-linux-mipsel-8.10.0.tar.xz` (skip `-musl` and `-dev`
-variants; if the plain one gives you "Illegal instruction", try `-musl`
-as a fallback, but it wasn't needed on my unit).
+download `curl-linux-mipsel-8.10.0.tar.xz` (skip the `-dev` variant; if
+this one gives you "Illegal instruction", the `-musl`-tagged build is
+worth a shot too - it's built for the same architecture and might behave
+differently on your unit).
 
 1. Save the tar.xz file on your PC and extract it.
 2. Send the `curl` binary to the radio (you can use Samba or, like me,
