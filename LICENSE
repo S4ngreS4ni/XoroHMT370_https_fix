@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 SangreSani
+Copyright (c) 2026 John (github.com/your-handle-here)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Additional note: this software modifies the firmware of a physical device
+(a SkyTC KMP510 / Ingenic JZ4760B based internet radio) by replacing a
+system binary via a bind mount and by editing the device's boot script.
+Applying it carries a real risk of misconfiguration or, in the worst case,
+of rendering the device unusable. Use it entirely at your own risk - see
+the disclaimer at the top of README.md for details. This license's
+standard "no warranty" language above already covers this, but it's
+spelled out here again because it matters more than it does for a typical
+piece of software.
