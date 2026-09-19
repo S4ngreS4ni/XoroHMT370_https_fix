@@ -1,4 +1,4 @@
-# ListenLive firmware HTTPS fix for Xoro HMT350 Radio (SkyTC KMP510)
+# ListenLive firmware HTTPS fix for Xoro HMT370 Radio (SkyTC KMP510)
 
 > ⚠️ **Disclaimer:** you're messing with the firmware of your own device
 > here, at your own risk. I'm sharing what worked for me, but it might not work for every one.
@@ -6,7 +6,7 @@
 > open an Issue, but I can't promise anything. Read the whole README
 > (especially the Backup section) before you touch anything.
 
-This is my patch that tackles a problem with the **Xoro HMT350** radio
+This is my patch that tackles a problem with the **Xoro HMT370** radio
 (SkyTC KMP510, Ingenic JZ4760/JZ4760B) running the ListenLive firmware.
 
 Most online radio stations today are served over HTTPS instead of plain
@@ -27,9 +27,9 @@ to Mr. William Jansen, the author of the firmware.
 
 ## Supported devices
 
-Xoro HMT350 (7 inch model)
+Xoro HMT370 (7 inch model)
 
-**Tested on:** Xoro HMT350 (Model No.: BSI-6636D07HD), ListenLive
+**Tested on:** Xoro HMT370 (Model No.: BSI-6636D07HD), ListenLive
 firmware 1.52, Ingenic JZ4760B, kernel 2.6.31.3.
 
 If you've successfully run this fix on some other device, feel free to
